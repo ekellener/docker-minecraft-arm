@@ -14,7 +14,7 @@ RUN mkdir /data && cd /data
 WORKDIR /data
 
 RUN wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
-RUN java -jar BuildTools.jar
+RUN java -jar /data/BuildTools.jar
 
 
 RUN apt-get install nano
